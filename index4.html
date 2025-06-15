@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=popins:wght@100;200;300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images2/logo.png" alt="logo" width="125px" />
+          </div>
+          <nav>
+            <ul id="menus">
+              <li><a href="index1.html">Home</a></li>
+              <li><a href="index2.html">Products</a></li>
+              <li><a href="index3.html">About</a></li>
+              <li><a href="index5.html">Contact</a></li>
+            </ul>
+          </nav>
+         <a href="index4.html"> <img src="images2/cart.png" alt="cart" width="30px" height="30px" /></a>
+          <img
+            src="images2/menu.png"
+            alt="menu"
+            width="30px"
+            height="30px"
+            class="menu-icon"
+            onclick="menuopen()"
+          />
+        </div>
+      </div>
+    </section>
+
+ 
+    <section class="addcart">
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images2/buy-1.jpg" alt="red-shirt" />
+                        <div>
+                            <p>Red Shirt</p>
+                            <small>Price: $20.00</small>
+                            <br />
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" /></td>
+                 <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images2/buy-2.jpg" alt="blue-shirt" />
+                        <div>
+                            <p>Blue Shirt</p>
+                            <small>Price: $25.00</small>
+                            <br />
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" /></td>
+                 <td>$25.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images2/buy-3.jpg" alt="green-shirt" />
+                        <div>
+                            <p>Green Shirt</p>
+                            <small>Price: $30.00</small>
+                            <br />
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" /></td>
+                 <td>$30.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td style="color: #ff523b; font-weight: 500;">Sub-total:</td>
+                    <td>$75.00</td>
+                </tr>
+                  <tr>
+                    <td style="color: #ff523b;">Tax:</td>
+                    <td>$25.00</td>
+                </tr>
+                  <tr>
+                    <td style="color: #ff523b;">Total:</td>
+                    <td>$100.00</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+
+    <br><br><br><br><br>
+
+    <section class="footer">
+      <div class="foot">
+        <div class="one">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="apps">
+            <img src="images2/play-store.png" alt="logo" />
+            <img src="images2/app-store.png" alt="app-logo" />
+          </div>
+        </div>
+
+        <div class="two">
+          <img src="images2/logo-white.png" />
+          <p>
+            Our purpose Is to Sustainably make the pleasure and Benefits of
+            sports Accessible to the Many.
+          </p>
+        </div>
+
+        <div class="three">
+          <h3>Use-Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Jion Affiliate</li>
+          </ul>
+        </div>
+
+        <div class="four">
+          <h3>Follow-Us</h3>
+          <ul>
+            <li>Face-book</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style="background: #b5b5b5; height: 2px; margin: 20px" />
+      <p class="copy">&copy; Copyright 2020 -Free Developer</p>
+    </section>
+
+    <script>
+      let mens = document.getElementById("menus");
+
+      mens.style.maxHeight = "0px";
+
+      function menuopen() {
+        if (mens.style.maxHeight == "0px") {
+          mens.style.maxHeight = "200px";
+        } else {
+          mens.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+
+
+
+  </body>
+</html>
